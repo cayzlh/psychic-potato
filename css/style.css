@@ -1,7 +1,7 @@
 @font-face {
   font-family: myfont;
   font-weight: 700;
-  src: url(https://cdn.jsdelivr.net/gh/sviptzk/xiaokang.me/www/myfont.ttf)
+  src: url(https://cdn.jsdelivr.net/gh/cayzlh/psychic-potato@master/font/myfont.ttf)
 }
 
 * {
@@ -137,7 +137,7 @@ body::-webkit-scrollbar-thumb {
   #header {
     margin-bottom: 4vw;
     padding: 40px 0;
-    color: #fff;
+    color: #444;
     background-image: url(https://cdn.jsdelivr.net/gh/blogimg/HexoStaticFile2@latest/2020/08/23/dc7fbb738de7546de8b2543d50204ca8.png);
     background-size: cover;
     background-position: bottom;
