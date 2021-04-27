@@ -1,5 +1,4 @@
-bplist00—_WebMainResource’	
-_WebResourceData_WebResourceMIMEType_WebResourceTextEncodingName^WebResourceURL_WebResourceFrameNameO/t<html><head></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">(function($) {
+(function($) {
 
 	/**
 	 * Generate an indented list of links from a nav. Meant for use with panel().
@@ -19,14 +18,14 @@ bplist00—_WebMainResource’
 				target = $this.attr('target');
 
 			b.push(
-				'&lt;a ' +
+				'<a ' +
 					'class="link depth-' + indent + '"' +
-					( (typeof target !== 'undefined' &amp;&amp; target != '') ? ' target="' + target + '"' : '') +
-					( (typeof href !== 'undefined' &amp;&amp; href != '') ? ' href="' + href + '"' : '') +
-				'&gt;' +
-					'&lt;span class="indent-' + indent + '"&gt;&lt;/span&gt;' +
+					( (typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
+					( (typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
+				'>' +
+					'<span class="indent-' + indent + '"></span>' +
 					$this.text() +
-				'&lt;/a&gt;'
+				'</a>'
 			);
 
 		});
@@ -47,9 +46,9 @@ bplist00—_WebMainResource’
 				return $this;
 
 		// Multiple elements?
-			if (this.length &gt; 1) {
+			if (this.length > 1) {
 
-				for (var i=0; i &lt; this.length; i++)
+				for (var i=0; i < this.length; i++)
 					$(this[i]).panel(userConfig);
 
 				return $this;
@@ -207,19 +206,19 @@ bplist00—_WebMainResource’
 							switch (config.side) {
 
 								case 'left':
-									result = (diffY &lt; boundary &amp;&amp; diffY &gt; (-1 * boundary)) &amp;&amp; (diffX &gt; delta);
+									result = (diffY < boundary && diffY > (-1 * boundary)) && (diffX > delta);
 									break;
 
 								case 'right':
-									result = (diffY &lt; boundary &amp;&amp; diffY &gt; (-1 * boundary)) &amp;&amp; (diffX &lt; (-1 * delta));
+									result = (diffY < boundary && diffY > (-1 * boundary)) && (diffX < (-1 * delta));
 									break;
 
 								case 'top':
-									result = (diffX &lt; boundary &amp;&amp; diffX &gt; (-1 * boundary)) &amp;&amp; (diffY &gt; delta);
+									result = (diffX < boundary && diffX > (-1 * boundary)) && (diffY > delta);
 									break;
 
 								case 'bottom':
-									result = (diffX &lt; boundary &amp;&amp; diffX &gt; (-1 * boundary)) &amp;&amp; (diffY &lt; (-1 * delta));
+									result = (diffX < boundary && diffX > (-1 * boundary)) && (diffY < (-1 * delta));
 									break;
 
 								default:
@@ -240,8 +239,8 @@ bplist00—_WebMainResource’
 						}
 
 					// Prevent vertical scrolling past the top or bottom.
-						if (($this.scrollTop() &lt; 0 &amp;&amp; diffY &lt; 0)
-						|| (ts &gt; (th - 2) &amp;&amp; ts &lt; (th + 2) &amp;&amp; diffY &gt; 0)) {
+						if (($this.scrollTop() < 0 && diffY < 0)
+						|| (ts > (th - 2) && ts < (th + 2) && diffY > 0)) {
 
 							event.preventDefault();
 							event.stopPropagation();
@@ -312,9 +311,9 @@ bplist00—_WebMainResource’
 				return $this;
 
 		// Multiple elements?
-			if (this.length &gt; 1) {
+			if (this.length > 1) {
 
-				for (var i=0; i &lt; this.length; i++)
+				for (var i=0; i < this.length; i++)
 					$(this[i]).placeholder();
 
 				return $this;
@@ -370,7 +369,7 @@ bplist00—_WebMainResource’
 
 					var i = $(this);
 					var x = $(
-								$('&lt;div&gt;')
+								$('<div>')
 									.append(i.clone())
 									.remove()
 									.html()
@@ -585,4 +584,4 @@ bplist00—_WebMainResource’
 
 	};
 
-})(jQuery);</pre></body></html>Ztext/plainUUTF-8_Hhttps://raw.githubusercontent.com/cayzlh/blog-framework/staic/js/util.jsP    ( : P n } î0000h                           0i
+})(jQuery);

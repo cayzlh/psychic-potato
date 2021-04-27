@@ -1,5 +1,4 @@
-bplist00—_WebMainResource’	
-_WebResourceData_WebResourceMIMEType_WebResourceTextEncodingName^WebResourceURL_WebResourceFrameNameO!^<html><head></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">/*
+/*
 	Dimension by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
@@ -39,7 +38,7 @@ bplist00—_WebMainResource’
 			$('form').placeholder();
 
 		// Fix: Flexbox min-height bug on IE.
-			if (skel.vars.IEVersion &lt; 12) {
+			if (skel.vars.IEVersion < 12) {
 
 				var flexboxFixTimeoutId;
 
@@ -49,7 +48,7 @@ bplist00—_WebMainResource’
 
 					flexboxFixTimeoutId = setTimeout(function() {
 
-						if ($wrapper.prop('scrollHeight') &gt; $window.height())
+						if ($wrapper.prop('scrollHeight') > $window.height())
 							$wrapper.css('height', 'auto');
 						else
 							$wrapper.css('height', '100vh');
@@ -88,7 +87,7 @@ bplist00—_WebMainResource’
 					// Handle lock.
 
 						// Already locked? Speed through "show" steps w/o delays.
-							if (locked || (typeof initial != 'undefined' &amp;&amp; initial === true)) {
+							if (locked || (typeof initial != 'undefined' && initial === true)) {
 
 								// Mark as switching.
 									$body.addClass('is-switching');
@@ -214,7 +213,7 @@ bplist00—_WebMainResource’
 
 					// Add state?
 						if (typeof addState != 'undefined'
-						&amp;&amp;	addState === true)
+						&&	addState === true)
 							history.pushState(null, null, '#');
 
 					// Handle lock.
@@ -299,7 +298,7 @@ bplist00—_WebMainResource’
 					var $this = $(this);
 
 					// Close.
-						$('&lt;div class="close"&gt;Close&lt;/div&gt;')
+						$('<div class="close">Close</div>')
 							.appendTo($this)
 							.on('click', function() {
 								location.hash = '';
@@ -356,7 +355,7 @@ bplist00—_WebMainResource’
 						}
 
 					// Otherwise, check for a matching article.
-						else if ($main_articles.filter(location.hash).length &gt; 0) {
+						else if ($main_articles.filter(location.hash).length > 0) {
 
 							// Prevent default.
 								event.preventDefault();
@@ -400,11 +399,11 @@ bplist00—_WebMainResource’
 
 				// Initial article.
 					if (location.hash != ''
-					&amp;&amp;	location.hash != '#')
+					&&	location.hash != '#')
 						$window.on('load', function() {
 							$main._show(location.hash.substr(1), true);
 						});
 
 	});
 
-})(jQuery);</pre></body></html>Ztext/plainUUTF-8_Hhttps://raw.githubusercontent.com/cayzlh/blog-framework/staic/js/main.jsP    ( : P n } î!ˆ"""R                           "S
+})(jQuery);
