@@ -12,7 +12,7 @@ var TODO = {
       <meta charset='UTF-8'>
       <title>Todo</title>
       <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>`
-    TODO.loadheadfile('https://acc.cloudbase.vip/todo/src/todo.css', 'css')
+    TODO.loadheadfile('https://cdn.jsdelivr.net/gh/cayzlh/psychic-potato@master/css/todo/todo.css', 'css')
     console.log(window.onload)
     if (window.onload == null) {
       window.onload = function () {
